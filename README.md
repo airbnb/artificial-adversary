@@ -60,7 +60,7 @@ metrics_single, metrics_group = gen.attack(texts_original, texts_generated, lamb
 Adversary(
     verbose=False, 
     output=None
-):
+)
 ```
 - **verbose:** If verbose, prints output while generating texts and while conducting attack
 - **output:** If output, pickles generated texts and metrics DataFrames to folder at `output` path
@@ -73,7 +73,7 @@ Adversary(
 
 **Generate attacked texts**
 ```
-generate(
+Adversary.generate(
     texts,
     text_sample_rate=1.0,
     word_sample_rate=0.3,
@@ -81,7 +81,7 @@ generate(
     max_attacks=2,
     random_seed=None,
     save=False
-):
+)
 ```
 - **texts:** List of original strings
 - **text_sample_rate:** P(individual text is attacked) if in [0, 1], else, number of copies of each text to use
@@ -99,17 +99,17 @@ Due to the probabilistic sampling and length heuristics used in certain attacks,
 
 **Simulate attack on texts**
 ```
-attack(
+Adversary.attack(
     texts_original, 
     texts_generated, 
     predict_function, 
     save=False
-):
+)
 ```
 - **texts_original:** List of original texts
 - **texts_generated:** List of generated texts (output of generate function)
-- **predict_function:** Function that maps strings to classification label (0 or 1)
-- **save:** Whether the generated metrics DataFrames should be pickled as output
+- **predict_function:** Function that maps `str` input text to `int` classification label (0 or 1) - this probably wraps a machine learning model's `predict` function
+- **save:** Whether the generated metrics `DataFrame`s should be pickled as output
 
 **Returns:** Tuple of two DataFrames containing performance metrics (single attacks, and grouped attacks, respectively)
 
