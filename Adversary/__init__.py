@@ -1,1 +1,2 @@
-from Adversary import Adversary
+from Adversary.adversary import Adversary
+from Adversary.attacks import *

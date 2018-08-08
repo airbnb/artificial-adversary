@@ -5,8 +5,8 @@ from random import random, seed
 import pandas as pd
 from textblob import TextBlob
 
-from attacks import *
-from utils import *
+from Adversary.attacks import *
+from Adversary.utils import *
 
 
 class Adversary:

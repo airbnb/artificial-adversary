@@ -1,4 +1,4 @@
-from Adversary import Adversary
+from Adversary.adversary import Adversary
 
 def test_generate_single_iter():
     m = Adversary(verbose=True)

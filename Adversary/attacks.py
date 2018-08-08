@@ -1,7 +1,7 @@
 from random import choice, randint, sample, randrange
 from string import punctuation
 
-from constants import *
+from Adversary.constants import *
 
 '''These act on a single text'''
 
