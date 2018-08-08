@@ -4,7 +4,7 @@
 
 <br>
 
-This repo is primarily maintained by [Devin Soni](https://github.com/100/).
+This repo is primarily maintained by [Devin Soni](https://github.com/100/) and [Philbert Lin](https://github.com/philin).
 
 ## Introduction
 
