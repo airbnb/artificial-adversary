@@ -9,5 +9,7 @@ before_install:
   - pycodestyle --ignore=E501,E712,E722,W503 Adversary/*.py
 install:
   - pip install pandas
+  - pip install nltk
   - pip install textblob
+  - python -m textblob.download_corpora
 script: py.test -s
