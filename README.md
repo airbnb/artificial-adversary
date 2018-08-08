@@ -4,6 +4,9 @@
 
 <br>
 
+[![Build Status](https://travis-ci.com/airbnb/artificial-adversary.svg?branch=master)](https://travis-ci.com/airbnb/artificial-adversary)
+[![MIT License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/100/Cranium/blob/master/LICENSE)
+
 This repo is primarily maintained by [Devin Soni](https://github.com/100/) and [Philbert Lin](https://github.com/philin).
 
 ## Introduction
@@ -15,7 +18,7 @@ This library allows you to generate texts using these methods, and simulate thes
 ## Installation
 
 ```
-pip install 
+pip install Adversary
 ```
 
 ## Usage
