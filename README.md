@@ -9,6 +9,8 @@
 
 This repo is primarily maintained by [Devin Soni](https://github.com/100/) and [Philbert Lin](https://github.com/philin).
 
+Note that this project is under active development. If you encounter bugs, please report them in the `issues` tab.
+
 ## Introduction
 
 When classifying user-generated text, there are many ways that users can modify their content to avoid detection. These methods are typically cosmetic modifications to the texts that change the raw characters or words used, but leave the original meaning visilbe enough for human readers to understand. Such methods include replacing characters with similar looking ones, removing or adding puncutation and spacing, and swapping letters in words. For example `please wire me 10,000 US DOLLARS to bank of scamland` is probably an obvious scam message, but `pl3@se.wire me 10000 US DoLars to,BANK of ScamIand` would fool many classifiers.
@@ -19,6 +21,7 @@ This library allows you to generate texts using these methods, and simulate thes
 
 ```
 pip install Adversary
+python -m textblob.download_corpora
 ```
 
 ## Usage
