@@ -93,6 +93,7 @@ def num_to_word(word):
 
 '''Keeps track of all attacks and their types'''
 
+
 ATTACK_MAP = {
     'text': {
         'good_word_attack': good_word_attack,
