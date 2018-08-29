@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Adversary',
-    version='1.1',
+    version='1.1.1',
     packages=['tests', 'Adversary'],
     url='https://github.com/airbnb/artificial-adversary',
     license='MIT',
