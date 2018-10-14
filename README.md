@@ -55,6 +55,7 @@ metrics_single, metrics_group = gen.attack(texts_original, texts_generated, lamb
     - Deleting characters (`delete_characters`)
     - Changing case (`change_case`)
     - Replacing digits with words (`num_to_word`)
+    - Removes special characters around letters (`remove_surrounding_characters`)
 
 ### Interface:
 

@@ -1,5 +1,6 @@
 from random import choice, randint, sample, randrange
 from string import punctuation
+import re
 
 from Adversary.constants import *
 
@@ -91,6 +92,11 @@ def num_to_word(word):
     return NUM_TO_WORD.get(word, word)
 
 
+def remove_surrounding_characters(word):
+    regex = re.compile('[^a-zA-Z]')
+    return regex.sub('', word)
+
+
 '''Keeps track of all attacks and their types'''
 
 
@@ -108,6 +114,7 @@ ATTACK_MAP = {
         'insert_duplicate_characters': insert_duplicate_characters,
         'delete_characters': delete_characters,
         'change_case': change_case,
-        'num_to_word': num_to_word
+        'num_to_word': num_to_word,
+        'remove_surrounding_characters': remove_surrounding_characters
     }
 }
